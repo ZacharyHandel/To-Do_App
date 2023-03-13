@@ -14,4 +14,7 @@ addToDoButton.addEventListener('click', function(){ //on click of the button
     paragraph.addEventListener("dblclick", function() { //on double click, remove the child from the toDoContainer div
         toDoContainer.removeChild(paragraph);
     })
+    paragraph.addEventListener("contextmenu", function() {
+        paragraph.style.textDecoration = "none"
+    })
 })
